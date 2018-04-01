@@ -24,7 +24,7 @@ Eastslopestudio\\LaravelSanity\\ServiceProvider::class,
 If you want to use the `Sanity` facade, add this to your facades in app.php:
 
 ```php
-'Filament' => Eastslopestudio\\LaravelSanity\\Facade::class
+'Sanity' => Eastslopestudio\\LaravelSanity\\Facade::class
 ```
 
 ---
