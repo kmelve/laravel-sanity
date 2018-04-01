@@ -16,7 +16,7 @@ $ composer require eastslopestudio/laravel-sanity
 
 Laravel >= 5 uses Package Auto-Discovery.
 
-    > If you don't use auto-discovery, add the ServiceProvider to the providers array in `config/app.php`
+> If you don't use auto-discovery, add the ServiceProvider to the providers array in `config/app.php`
 
 ```php
 Eastslopestudio\\LaravelSanity\\ServiceProvider::class,
