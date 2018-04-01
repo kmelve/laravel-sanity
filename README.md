@@ -2,7 +2,7 @@
 
 # Sanity.io Laravel Service Provider
 
-A Laravel service provider for the [Sanity.io API](https://sanity.io/) [PHP library](https://github.com/sanity-io/sanity-php).
+A Laravel service provider for the [Sanity.io API](https://sanity.io/) client [PHP library](https://github.com/sanity-io/sanity-php).
 
 ---
 
@@ -11,7 +11,7 @@ A Laravel service provider for the [Sanity.io API](https://sanity.io/) [PHP libr
 Once you have Laravel installed, add this package to your project in the typical composer way:
 
 ```shell
-$ composer require eastslopestudio/filament-cms
+$ composer require eastslopestudio/laravel-sanity
 ```
 
 Laravel >= 5 uses Package Auto-Discovery.
