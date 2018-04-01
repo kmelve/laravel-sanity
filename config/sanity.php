@@ -29,14 +29,12 @@ return [
 
     /*
      |--------------------------------------------------------------------------
-     | Use CDN
+     | Token
      |--------------------------------------------------------------------------
      |
-     | If set to true, this gives fast, cheap responses using a globally distributed cache.
-     | Set this to false if your application require the freshest possible data always
-     | (potentially slightly slower and a bit more expensive).
+     | Leave blank to be an anonymous user.
      */
 
-    'useCdn' => env('SANITY_USE_CDN', true),
+    'token' => env('SANITY_TOKEN'),
 
 ];

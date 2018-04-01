@@ -36,7 +36,7 @@ This package references [environment configuration](https://laravel.com/docs/5.6
 ```
 SANITY_PROJECT_ID=projectidhere
 SANITY_DATASET=production
-SANITY_USE_CDN=false
+SANITY_TOKEN=authToken
 ```
 
 You may also publish the config file to your own application and define the appropriate config settings:
