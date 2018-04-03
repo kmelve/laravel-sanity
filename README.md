@@ -2,7 +2,7 @@
 
 # Sanity.io Laravel Service Provider
 
-A Laravel service provider for the [Sanity.io API](https://sanity.io/) client [PHP library](https://github.com/sanity-io/sanity-php).
+A service provider for [Laravel](https://laravel.com) that can be used to communicate with the [Sanity.io API](https://sanity.io/) using the [PHP library](https://github.com/sanity-io/sanity-php).
 
 ---
 
