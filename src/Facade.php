@@ -2,8 +2,6 @@
 
 namespace Eastslopestudio\LaravelSanity;
 
-use Sanity\Client as SanityClient;
-
 class Facade extends \Illuminate\Support\Facades\Facade
 {
     
@@ -12,7 +10,7 @@ class Facade extends \Illuminate\Support\Facades\Facade
      */
     protected static function getFacadeAccessor()
     {
-        return SanityClient::class;
+        return Sanity::class;
     }
 
 }

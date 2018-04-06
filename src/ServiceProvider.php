@@ -2,8 +2,6 @@
 
 namespace Eastslopestudio\LaravelSanity;
 
-use Sanity\Client as SanityClient;
-
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
 
@@ -30,9 +28,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->mergeConfigFrom("{$this->packagePath}config/sanity.php", 'sanity');
 
         // Register the container singleton
-        $this->app->singleton(SanityClient::class, function ($app) {
-            return new SanityClient($app['config']['sanity']);
+        $this->app->singleton(Sanity::class, function ($app) {
+            return new Sanity($app['config']['sanity']);
         });
+
     }
 
     /**
@@ -42,7 +41,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function provides()
     {
-        return [SanityClient::class];
+        return [Sanity::class];
     }
 
 }

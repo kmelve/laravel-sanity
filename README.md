@@ -44,3 +44,23 @@ You may also publish the config file to your own application and define the appr
 ```shell
 $ php artisan vendor:publish --tag=sanity
 ```
+
+---
+
+## Example Usage
+
+> The following example assumes you are using the registered `Sanity` facade.
+
+```php
+// query latest post that isnt a draft
+$query = '*[_type == "post" && !(_id in path("drafts.**"))] {
+    _id,
+    title,
+    slug,
+    body
+}[0]';
+// fetch post
+$post = Sanity::client()->fetch($query);
+// render block content (transforms array block structure to HTML)
+$body = Sanity::html($post['body']);
+```
